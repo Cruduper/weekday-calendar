@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Weekday Calendar</title>
+  <title>Weekday Utility</title>
 </head>
 <body>
- 
+  <div class=" d-flex justify-content-center">
+    <div class="card text-center">
+      <div class="card-header">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Weekday Calculator</h5>
+        <div id="input">
+          <p class="card-text">Choose a date, and we'll tell you what day of the week it was.</p>
+          <input type="date" name="date-picker" id="date-picker">
+          <div id="start-button" class="btn btn-primary">Show me the day of the week!</div>  
+        </div>
+        <div class="hidden" id="output">
+          <p class="card-text">On <span id="output-date"></span>, the day of the week was <span id="output-day"></span>.</p>
+          <button id="reset-button" class="btn btn-danger">Pick another date.</button>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Built by Matt Eilar & Eric Crudup
+      </div>
+    </div>
+  </div>
 </body>
 </html>
